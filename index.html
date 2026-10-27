@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R B Maintenance &amp; Cleaning Inc | Janitorial Service in St. Albert, Sherwood Park and Edmonton</title>
+<meta name="description" content="Commercial, residential and green cleaning in St. Albert, Sherwood Park and Edmonton. Licensed, bonded and insured. Free estimates. Call (780) 995-9780.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10261f;
+  --moss:#1b4d3e;
+  --moss-2:#256653;
+  --paper:#f3efe4;
+  --card:#fbf9f3;
+  --hi:#f6c915;
+  --hi-d:#d9ae00;
+  --line:rgba(16,38,31,.14);
+  --muted:#4d5f58;
+  --r:22px;
+  --maxw:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden;font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05;letter-spacing:-.02em;font-weight:800}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--moss)}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--hi);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;padding:16px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;font-size:16px;font-family:inherit;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-hi{background:var(--hi);color:var(--ink)}
+.btn-hi:hover{background:#ffd934}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--moss)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-line.on-dark{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-line.on-dark:hover{background:#fff;color:var(--ink)}
+
+/* image placeholders */
+.ph{position:relative;overflow:hidden;background:
+  repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 14px,transparent 14px 28px),
+  linear-gradient(160deg,var(--moss-2),var(--ink));}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* top bar */
+.topbar{background:var(--ink);color:#e8efe9;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.topbar b{color:var(--hi);font-weight:700}
+.topbar .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#4ade80;margin-right:8px;box-shadow:0 0 0 4px rgba(74,222,128,.2)}
+.topbar a{font-weight:700}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(243,239,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{max-width:1400px;display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-img{height:54px;width:auto}
+.brand-fallback{display:none;align-items:center;gap:12px;flex:none}
+.mono{flex:none;width:46px;height:46px;border-radius:12px;background:var(--moss);color:var(--hi);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;letter-spacing:-.04em;box-shadow:4px 4px 0 var(--hi)}
+.brand-name{white-space:nowrap;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:16px;line-height:1.1;letter-spacing:-.01em}
+.brand-name small{display:block;font-family:'Figtree',sans-serif;font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+nav.main ul{display:flex;align-items:center;gap:0}
+nav.main li{position:relative}
+nav.main a.nl,nav.main button.nl{font:600 14px 'Figtree',sans-serif;white-space:nowrap;padding:9px 8px;border-radius:999px;background:none;border:0;cursor:pointer;color:var(--ink);display:inline-flex;align-items:center;gap:6px;transition:background .2s}
+nav.main a.nl:hover,nav.main button.nl:hover,nav.main li:focus-within>.nl{background:rgba(16,38,31,.08)}
+.dd{position:absolute;left:0;top:100%;min-width:330px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:0 24px 50px -20px rgba(16,38,31,.35);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s}
+nav.main li:hover .dd,nav.main li:focus-within .dd{opacity:1;visibility:visible;transform:none}
+.dd a{display:block;padding:10px 14px;border-radius:12px;font-weight:500;font-size:15px}
+.dd a:hover{background:var(--hi)}
+.hcta{display:flex;align-items:center;gap:14px}
+.hcta .btn{padding:13px 22px;font-size:15px;white-space:nowrap}
+.burger{display:none;width:46px;height:46px;border-radius:12px;border:2px solid var(--ink);background:none;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger span{width:20px;height:2px;background:var(--ink);transition:.2s}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;padding:96px 0 190px;min-height:min(88vh,820px);display:flex;align-items:flex-end;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2;background:
+  repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 16px,transparent 16px 32px),
+  linear-gradient(120deg,var(--moss-2),var(--ink) 70%)}
+.hero .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(16,38,31,.92) 0%,rgba(16,38,31,.7) 45%,rgba(16,38,31,.25) 100%)}
+.hero .wrap{width:100%;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+.hero .eyebrow{color:var(--hi)}
+.hero h1{font-size:clamp(48px,7.4vw,112px);margin:22px 0 26px;max-width:900px}
+.hero h1 .mk{color:var(--hi)}
+.hero p.lead{font-size:20px;color:#d6e4dc;max-width:560px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.hero .btn-line{border-color:rgba(255,255,255,.6);color:#fff}
+.hero .btn-line:hover{background:#fff;color:var(--ink)}
+.hours-tag{display:grid;gap:6px;padding:22px 26px;background:rgba(251,249,243,.12);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);border-radius:18px;font-size:15px;font-weight:600;min-width:270px}
+.hours-tag span{color:#c3d3ca;font-weight:500}
+.hours-tag b{color:#fff}
+.hours-tag b:last-child{color:var(--hi)}
+.tapes{position:absolute;left:0;right:0;bottom:0;height:150px;z-index:1;pointer-events:none}
+.tape{position:absolute;left:-6%;width:112%;white-space:nowrap;overflow:hidden;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:22px;padding:15px 0}
+.tape.a{bottom:34px;background:var(--hi);color:var(--ink);transform:rotate(-2deg);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);z-index:2}
+.tape.b{bottom:48px;background:var(--paper);color:var(--ink);transform:rotate(1.6deg);z-index:1;opacity:.96}
+.tape .mq{display:inline-flex;gap:0;animation:mq 38s linear infinite;will-change:transform}
+.tape.b .mq{animation-direction:reverse;animation-duration:46s}
+.tape span{padding:0 22px}
+.tape i{font-style:normal;color:var(--moss-2)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* intro */
+.intro{padding:40px 0 100px}
+.intro .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.intro h2{font-size:clamp(44px,5.4vw,78px);margin-top:18px}
+.intro h2 em{font-style:normal;color:var(--moss-2)}
+.intro p{font-size:19px;color:#2f433c}
+.intro .sig{margin-top:26px;display:flex;align-items:center;gap:14px;font-weight:700}
+.intro .sig i{width:46px;height:3px;background:var(--hi)}
+
+/* creed staircase */
+.creed{padding:20px 0 120px}
+.creed .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px;flex-wrap:wrap}
+.creed .head h2{font-size:clamp(34px,4vw,54px);margin-top:14px;max-width:560px}
+.stairs{position:relative}
+.stp{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;max-width:780px;padding:34px 0 38px;border-top:2px solid var(--ink)}
+.stp:nth-child(2){margin-left:15%}
+.stp:nth-child(3){margin-left:30%;border-bottom:2px solid var(--ink)}
+.stp .num{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(84px,10vw,150px);line-height:.85;color:transparent;-webkit-text-stroke:2px var(--ink);transition:color .35s}
+.stp:hover .num{color:var(--hi)}
+.stp h3{font-size:clamp(32px,3.6vw,52px);margin-bottom:12px}
+.stp p{color:#2f433c;font-size:17.5px;max-width:520px}
+
+/* services */
+.services{background:var(--ink);color:#fff;padding:110px 0;border-radius:44px 44px 0 0}
+.services .wrap{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px}
+.svc-head{position:sticky;top:120px;align-self:start}
+.services .eyebrow{color:var(--hi)}
+.svc-head h2{font-size:clamp(38px,4.4vw,62px);margin:18px 0 20px}
+.svc-head p{color:#b9cbc3;max-width:380px;margin-bottom:28px}
+.grp{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--hi);padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.18)}
+.grp.second{margin-top:46px}
+.row{display:grid;grid-template-columns:54px 1fr 44px;gap:18px;align-items:center;padding:24px 8px;border-bottom:1px solid rgba(255,255,255,.14);transition:background .25s,padding .25s}
+.row:hover{background:rgba(255,255,255,.05);padding-left:20px;padding-right:20px}
+.row .no{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;color:rgba(255,255,255,.4);font-size:16px}
+.row h3{font-size:clamp(22px,2.2vw,30px);margin-bottom:6px}
+.row p{color:#b9cbc3;font-size:15.5px;line-height:1.5;max-width:560px}
+.row .ar{width:44px;height:44px;border-radius:50%;background:var(--hi);color:var(--ink);display:grid;place-items:center;font-weight:800;transition:transform .25s}
+.row:hover .ar{transform:rotate(-45deg)}
+
+/* who we clean */
+.who{background:var(--card);padding:110px 0}
+.who .top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
+.who h2{font-size:clamp(36px,4.2vw,58px);margin-top:16px}
+.who .top p{font-size:18px;color:var(--muted)}
+.who .cols{display:grid;grid-template-columns:1fr 1.15fr;gap:28px}
+.box{border:1.5px solid var(--line);border-radius:var(--r);padding:34px;background:var(--paper)}
+.box h3{font-size:24px;margin-bottom:22px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips li{padding:10px 16px;border-radius:999px;background:var(--card);border:1.5px solid var(--ink);font-weight:600;font-size:15px}
+.chips li:nth-child(3n){background:var(--hi);border-color:var(--hi)}
+.tick{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.tick li{position:relative;padding-left:28px;font-weight:500;font-size:15.5px}
+.tick li::before{content:"";position:absolute;left:0;top:7px;width:14px;height:8px;border-left:3px solid var(--moss-2);border-bottom:3px solid var(--moss-2);transform:rotate(-45deg)}
+
+/* construction */
+.constr{background:var(--moss);color:#fff;padding:110px 0}
+.constr .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.constr .eyebrow{color:var(--hi)}
+.constr h2{font-size:clamp(38px,4.4vw,64px);margin:18px 0 22px}
+.constr p{color:#cfe0d8;margin-bottom:16px}
+.constr .ph{aspect-ratio:4/3;border-radius:var(--r);margin:30px 0 0}
+.clip{background:var(--paper);color:var(--ink);border-radius:var(--r);padding:44px 38px 36px;position:relative;box-shadow:0 40px 60px -34px rgba(0,0,0,.55);transform:rotate(1.2deg)}
+.clip::before{content:"";position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:130px;height:34px;border-radius:10px;background:var(--hi);border:3px solid var(--ink)}
+.clip h3{font-size:26px;margin-bottom:22px}
+.clip ul{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px}
+.clip li{position:relative;padding-left:30px;font-size:15px;font-weight:500;line-height:1.4}
+.clip li::before{content:"";position:absolute;left:0;top:1px;width:19px;height:19px;border:2px solid var(--ink);border-radius:5px;background:#fff}
+.clip li::after{content:"";position:absolute;left:5px;top:5px;width:9px;height:5px;border-left:3px solid var(--moss-2);border-bottom:3px solid var(--moss-2);transform:rotate(-45deg)}
+.clip .foot{color:var(--ink);margin-top:26px;padding-top:20px;border-top:1.5px dashed rgba(16,38,31,.3);font-weight:600;font-size:15.5px}
+
+/* schedule + green */
+.sg{padding:110px 0}
+.sg .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.sched{border:1.5px solid var(--ink);border-radius:var(--r);padding:44px;background:var(--card)}
+.sched h2{font-size:clamp(32px,3.6vw,48px);margin:16px 0 14px}
+.sched .sub{color:var(--muted);margin-bottom:26px}
+.tabs{display:inline-flex;background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:5px;gap:4px;margin-bottom:24px;flex-wrap:wrap}
+.tabs button{font:700 15px 'Figtree',sans-serif;border:0;background:none;padding:11px 20px;border-radius:999px;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff}
+.tabpane{display:none;font-size:16.5px;color:#2f433c;min-height:170px}
+.tabpane.on{display:block;animation:fd .4s}
+@keyframes fd{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tabpane h3{font-size:24px;color:var(--ink);margin-bottom:10px}
+.adv{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;padding-top:26px;border-top:1.5px dashed var(--line)}
+.adv li{font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:9px 14px;background:var(--hi);border-radius:8px}
+.green{border-radius:var(--r);padding:44px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.green::after{content:"";position:absolute;right:-80px;bottom:-80px;width:240px;height:240px;border-radius:50%;border:34px solid rgba(246,201,21,.16)}
+.green .eyebrow{color:var(--hi)}
+.green h2{font-size:clamp(30px,3.2vw,42px);margin:16px 0 16px}
+.green p{color:#b9cbc3;font-size:16px;margin-bottom:22px}
+.green li{padding:11px 0 11px 30px;border-top:1px solid rgba(255,255,255,.14);position:relative;font-weight:500;font-size:15.5px}
+.green li::before{content:"";position:absolute;left:2px;top:19px;width:14px;height:8px;border-left:3px solid var(--hi);border-bottom:3px solid var(--hi);transform:rotate(-45deg)}
+
+/* trust */
+.trust{padding:0 0 110px}
+.trust .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.trust h2{font-size:clamp(36px,4.2vw,58px);margin:16px 0 20px}
+.trust .lede{color:var(--muted);font-size:18px;margin-bottom:26px}
+.acc{border-top:2px solid var(--ink)}
+.acc-i{border-bottom:1.5px solid var(--line)}
+.acc-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:none;border:0;cursor:pointer;padding:26px 0;font:800 clamp(24px,2.5vw,34px) 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;text-align:left;color:var(--ink)}
+.acc-q i{flex:none;width:40px;height:40px;border-radius:50%;background:var(--hi);position:relative;transition:transform .3s}
+.acc-q i::before,.acc-q i::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:3px;background:var(--ink);transform:translate(-50%,-50%)}
+.acc-q i::after{transform:translate(-50%,-50%) rotate(90deg);transition:.3s}
+.acc-i.open .acc-q i::after{transform:translate(-50%,-50%) rotate(0)}
+.acc-a{max-height:0;overflow:hidden;transition:max-height .45s}
+.acc-a p{padding:0 60px 28px 0;color:#2f433c;font-size:17px}
+
+/* contact */
+.contact{background:var(--hi);padding:100px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
+.contact h2{font-size:clamp(38px,4.6vw,66px);margin-bottom:12px}
+.contact .eyebrow{color:var(--ink)}
+.contact .eyebrow::before{background:var(--ink)}
+.contact .s{font-size:18px;margin-bottom:30px;max-width:520px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+input,textarea{width:100%;font:500 16px 'Figtree',sans-serif;padding:15px 16px;border-radius:14px;border:2px solid var(--ink);background:#fffdf3;color:var(--ink)}
+input:focus,textarea:focus{outline:3px solid var(--ink);outline-offset:2px}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start}
+.info{background:var(--ink);color:#fff;border-radius:var(--r);padding:40px;align-self:start}
+.info h3{font-size:24px;margin-bottom:20px;color:var(--hi)}
+.info .it{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:16.5px}
+.info .it span{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#9fb5ac;font-weight:700;margin-bottom:3px}
+.info .it b{font-weight:600}
+.info a:hover{color:var(--hi)}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pay li{padding:7px 13px;border:1.5px solid rgba(255,255,255,.4);border-radius:8px;font-size:13.5px;font-weight:600}
+
+/* footer */
+footer{background:var(--ink);color:#c8d6cf;padding:80px 0 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:44px;padding-bottom:56px}
+footer .brand-name{color:#fff}
+footer .brand-name small{color:#9fb5ac}
+footer .mono{box-shadow:4px 4px 0 var(--hi)}
+footer p.t{margin-top:20px;max-width:330px;font-size:15.5px}
+footer h4{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--hi);margin-bottom:18px;font-family:'Figtree',sans-serif;font-weight:700}
+footer li{margin-bottom:10px;font-size:15.5px}
+footer li a:hover{color:#fff;text-decoration:underline;text-decoration-color:var(--hi);text-underline-offset:4px}
+.fbar{border-top:1px solid rgba(255,255,255,.14);padding:24px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14.5px}
+.fbar a{color:var(--hi);font-weight:700}
+.fbar a:hover{text-decoration:underline}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.js .rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:1400px){
+  .hcta .btn{display:none}
+  nav.main{position:fixed;inset:0 0 0 auto;width:min(380px,92vw);background:var(--card);padding:100px 24px 30px;display:none;z-index:60;overflow:auto;box-shadow:-30px 0 60px -30px rgba(0,0,0,.4)}
+  nav.main.open{display:block;animation:slin .35s}
+  @keyframes slin{from{transform:translateX(40px);opacity:0}to{transform:none;opacity:1}}
+  nav.main ul{flex-direction:column;align-items:stretch;gap:2px}
+  nav.main a.nl,nav.main button.nl{width:100%;justify-content:space-between;font-size:18px;padding:14px 10px}
+  .dd{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:none;padding:0 0 0 12px;min-width:0;display:none}
+  nav.main li.sub-open .dd{display:block}
+  .burger{display:flex;position:relative;z-index:70}
+  .intro .wrap,.services .wrap,.constr .wrap,.contact .wrap,.trust .wrap,.who .top,.sg .wrap{grid-template-columns:1fr;gap:40px}
+  .svc-head{position:static}
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .stp:nth-child(2){margin-left:8%}
+  .stp:nth-child(3){margin-left:16%}
+  .who .cols{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .stp,.stp:nth-child(2),.stp:nth-child(3){margin-left:0;gap:20px}
+  .tape{font-size:17px}
+}
+@media(max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .hero{padding:70px 0 160px}
+  .stp{grid-template-columns:1fr;gap:6px}
+  .stp .num{font-size:72px}
+  .tick,.clip ul,form{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .sched,.green,.info,.box{padding:28px 22px}
+  .clip{padding:40px 22px 28px;transform:none}
+  .row{grid-template-columns:36px 1fr 40px;gap:12px}
+  .acc-a p{padding-right:0}
+  .services{border-radius:30px 30px 0 0;padding:80px 0}
+  .intro,.who,.constr,.sg{padding-top:80px;padding-bottom:80px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body id="top">
+
+<div class="topbar">
+  <div class="wrap">
+    <span><i class="dot"></i>Monday - Friday: 8AM to 5PM &nbsp;|&nbsp; Saturday &amp; Sunday: Closed &nbsp;|&nbsp; <b>24/7 emergency services available</b></span>
+    <a href="tel:+17809959780">(780) 995-9780</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="R B Maintenance &amp; Cleaning Inc home">
+      <img class="brand-img" src="images/logo.png" alt="R B Maintenance &amp; Cleaning Inc" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="brand-fallback"><span class="mono">RB</span><span class="brand-name">R B Maintenance &amp; Cleaning Inc<small>Janitorial Service</small></span></span>
+    </a>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a class="nl" href="#top">Home</a></li>
+        <li><a class="nl" href="https://rbmaintenance.ca/about-us/">About</a></li>
+        <li>
+          <button class="nl" type="button" aria-haspopup="true">Commercial <span aria-hidden="true">&#9662;</span></button>
+          <div class="dd">
+            <a href="https://rbmaintenance.ca/commercial/banks-office-building-cleaning/">Banks Office Building Cleaning</a>
+            <a href="https://rbmaintenance.ca/commercial/commercial-window-washing/">Commercial Window Washing</a>
+            <a href="https://rbmaintenance.ca/commercial/health-care-facility-and-medical-office-cleaning/">Health Care Facility and Medical Office Cleaning</a>
+            <a href="https://rbmaintenance.ca/commercial/school-and-gym-cleaning/">School and Gym Cleaning</a>
+            <a href="https://rbmaintenance.ca/commercial/shopping-centers/">Shopping Centers</a>
+            <a href="https://rbmaintenance.ca/commercial/commercial-carpet-cleaning/">Commercial Carpet Cleaning</a>
+          </div>
+        </li>
+        <li><a class="nl" href="https://rbmaintenance.ca/construction-cleaning/">Construction Cleaning</a></li>
+        <li><a class="nl" href="https://rbmaintenance.ca/scheduled-cleaning-service/">Scheduled Cleaning Service</a></li>
+        <li><a class="nl" href="https://rbmaintenance.ca/green-cleaning/">Green Cleaning</a></li>
+        <li><a class="nl" href="https://rbmaintenance.ca/maid-services/">Maid Services</a></li>
+        <li><a class="nl" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hcta">
+      <a class="btn btn-dark" href="#contact">Free Quote</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="bg"><img src="images/hero-main.jpg" alt="R B Maintenance cleaning professional at work" onerror="this.remove()"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">St. Albert &middot; Sherwood Park &middot; Edmonton</span>
+      <h1>Commercial, Residential &amp; <span class="mk">Green</span> Cleaning</h1>
+      <p class="lead">R B Maintenance &amp; Cleaning Inc offers flexible and reliable janitorial service, whether you need a one-time service call or an ongoing maintenance program. Free estimates and reasonable rates.</p>
+      <div class="actions">
+        <a class="btn btn-hi" href="#contact">Free Quote &rarr;</a>
+        <a class="btn btn-line" href="tel:+17809959780">(780) 995-9780</a>
+      </div>
+    </div>
+    <div class="hours-tag">
+      <b>Monday - Friday: 8AM to 5PM</b>
+      <span>Saturday &amp; Sunday: Closed</span>
+      <b>24/7 emergency services available</b>
+    </div>
+  </div>
+  <div class="tapes" aria-hidden="true">
+    <div class="tape b"><div class="mq"><span>St. Albert</span><i>&#9670;</i><span>Sherwood Park</span><i>&#9670;</i><span>Edmonton</span><i>&#9670;</i><span>Customer satisfaction follow-ups</span><i>&#9670;</i><span>Flexible schedules</span><i>&#9670;</i><span>Courteous</span><i>&#9670;</i><span>St. Albert</span><i>&#9670;</i><span>Sherwood Park</span><i>&#9670;</i><span>Edmonton</span><i>&#9670;</i><span>Customer satisfaction follow-ups</span><i>&#9670;</i><span>Flexible schedules</span><i>&#9670;</i><span>Courteous</span><i>&#9670;</i><span>St. Albert</span><i>&#9670;</i><span>Sherwood Park</span><i>&#9670;</i><span>Edmonton</span><i>&#9670;</i><span>Customer satisfaction follow-ups</span><i>&#9670;</i><span>Flexible schedules</span><i>&#9670;</i><span>Courteous</span><i>&#9670;</i><span>St. Albert</span><i>&#9670;</i><span>Sherwood Park</span><i>&#9670;</i><span>Edmonton</span><i>&#9670;</i><span>Customer satisfaction follow-ups</span><i>&#9670;</i><span>Flexible schedules</span><i>&#9670;</i><span>Courteous</span><i>&#9670;</i></div></div>
+    <div class="tape a"><div class="mq"><span>Licensed</span><i>&#9670;</i><span>Bonded</span><i>&#9670;</i><span>Insured</span><i>&#9670;</i><span>24/7 emergency services available</span><i>&#9670;</i><span>Free estimates</span><i>&#9670;</i><span>Commercial, Residential &amp; Green Cleaning</span><i>&#9670;</i><span>Licensed</span><i>&#9670;</i><span>Bonded</span><i>&#9670;</i><span>Insured</span><i>&#9670;</i><span>24/7 emergency services available</span><i>&#9670;</i><span>Free estimates</span><i>&#9670;</i><span>Commercial, Residential &amp; Green Cleaning</span><i>&#9670;</i><span>Licensed</span><i>&#9670;</i><span>Bonded</span><i>&#9670;</i><span>Insured</span><i>&#9670;</i><span>24/7 emergency services available</span><i>&#9670;</i><span>Free estimates</span><i>&#9670;</i><span>Commercial, Residential &amp; Green Cleaning</span><i>&#9670;</i><span>Licensed</span><i>&#9670;</i><span>Bonded</span><i>&#9670;</i><span>Insured</span><i>&#9670;</i><span>24/7 emergency services available</span><i>&#9670;</i><span>Free estimates</span><i>&#9670;</i><span>Commercial, Residential &amp; Green Cleaning</span><i>&#9670;</i></div></div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">St. Albert Cleaning Professionals</span>
+      <h2>Let us take <em>care</em> of it.</h2>
+    </div>
+    <div class="rv">
+      <p>Organizing the cleaning of a home or business can be a daunting task as there are so many facets to take into account. Which areas must be sanitized and which require a thorough cleaning? What cleaning methods are best to maximize a specific cleaning schedule? How often should extreme deep cleaning be performed?</p>
+      <p style="margin-top:18px">With years of experience in the commercial janitorial and residential cleaning industry, R B Maintenance &amp; Cleaning Inc is well versed at answering these questions and more. You can trust us to get the job done right!</p>
+      <div class="sig"><i></i>Licensed, Bonded and Insured</div>
+    </div>
+  </div>
+</section>
+
+<!-- CREED -->
+<section class="creed">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="eyebrow">How we work</span><h2>Three words we hold ourselves to.</h2></div>
+    </div>
+    <div class="stairs">
+      <article class="stp rv"><div class="num">01</div><div><h3>Dedicated</h3><p>A company is only as good as the work it performs. R B Maintenance &amp; Cleaning Inc is dedicated to meeting all the expectations of our clients, so that our reputation shines as much as the areas we clean.</p></div></article>
+      <article class="stp rv"><div class="num">02</div><div><h3>Experienced</h3><p>Anyone can clean but not just anyone can clean to meet the rigorous standards that the people of St. Albert expect from a professional cleaning service. Our experience gives us the ability to clean and sanitize efficiently every time.</p></div></article>
+      <article class="stp rv"><div class="num">03</div><div><h3>Professional</h3><p>Being a professional janitorial service is more than just cleaning well. It necessitates a professional image and excellent customer service. When the people of St. Albert call on us they get the professional janitorial service they are looking for.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES INDEX -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <span class="eyebrow">Our services</span>
+      <h2>Commercial, residential and green cleaning.</h2>
+      <p>Choose from a range of residential or commercial cleaning service packages that may be combined with specialized services.</p>
+      <a class="btn btn-hi" href="#contact">Free Quote &rarr;</a>
+    </div>
+    <div>
+      <div class="grp">Commercial</div>
+      <a class="row rv" href="https://rbmaintenance.ca/commercial/banks-office-building-cleaning/"><span class="no">01</span><div><h3>Banks Office Building Cleaning</h3><p>Banks and office buildings benefit from professional janitorial service, with happier customers and a more productive workplace.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/commercial/commercial-window-washing/"><span class="no">02</span><div><h3>Commercial Window Washing</h3><p>Dirt, dust and grime on commercial windows leave visitors with the wrong impression. We clear it all off.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/commercial/health-care-facility-and-medical-office-cleaning/"><span class="no">03</span><div><h3>Health Care Facility and Medical Office Cleaning</h3><p>Properly trained and equipped cleaning staff for facilities with strict cleaning and sanitation regulations.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/commercial/school-and-gym-cleaning/"><span class="no">04</span><div><h3>School and Gym Cleaning</h3><p>Systematic cleaning of the gym, cafeteria, washrooms, water fountains, desks, library and other common areas.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/commercial/shopping-centers/"><span class="no">05</span><div><h3>Shopping Centers</h3><p>Clean and orderly retail centers set the tone for a positive customer experience.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/commercial/commercial-carpet-cleaning/"><span class="no">06</span><div><h3>Commercial Carpet Cleaning</h3><p>A healthy and productive office starts from the ground up. We get office carpets back to like-new condition.</p></div><span class="ar">&rarr;</span></a>
+
+      <div class="grp second">More services</div>
+      <a class="row rv" href="https://rbmaintenance.ca/construction-cleaning/"><span class="no">07</span><div><h3>Construction Cleaning</h3><p>Clean-up at any stage of the building process, from residential renovation to post-construction maintenance.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/scheduled-cleaning-service/"><span class="no">08</span><div><h3>Scheduled Cleaning Service</h3><p>Weekly, bi-weekly, monthly or seasonal cleaning plans customized to your needs.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/green-cleaning/"><span class="no">09</span><div><h3>Green Cleaning</h3><p>Janitorial services that protect the health of a location's residents without harming the environment.</p></div><span class="ar">&rarr;</span></a>
+      <a class="row rv" href="https://rbmaintenance.ca/maid-services/"><span class="no">10</span><div><h3>Maid Services</h3><p>Full-service house cleaning, on a scheduled basis or as a one-time deep cleaning.</p></div><span class="ar">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO + ADD-ONS -->
+<section class="who">
+  <div class="wrap">
+    <div class="top">
+      <div class="rv">
+        <span class="eyebrow">Efficient and reliable</span>
+        <h2>Janitorial services in Edmonton for every kind of space.</h2>
+      </div>
+      <p class="rv">Whether you need a one-time service call or an ongoing maintenance program, we adapt a cleaning regimen to the precise needs of your home or business, with detailed reports, flexible schedules and modern cleaning equipment.</p>
+    </div>
+    <div class="cols">
+      <div class="box rv">
+        <h3>Who we clean for</h3>
+        <ul class="chips">
+          <li>Residential homes</li><li>Banks and credit unions</li><li>Schools and daycares</li><li>Medical offices</li><li>Office buildings</li><li>Warehouses</li>
+          <li>Apartment complexes</li><li>Gyms and recreational facilities</li><li>Health care institutions</li><li>Shopping centers</li><li>Industrial complexes</li><li>Construction sites</li>
+        </ul>
+      </div>
+      <div class="box rv">
+        <h3>Specialized services you can combine</h3>
+        <ul class="tick">
+          <li>Post Construction cleaning</li><li>Residential Renovation Cleaning</li>
+          <li>Blinds and window dressing cleaning</li><li>Medical waste disposal</li>
+          <li>Window cleaning</li><li>Cleaning for hi-tech and industrial equipment</li>
+          <li>Deep cleaning for carpets</li><li>Recycling Services</li>
+          <li>Upholstery cleaning</li><li>Emergency clean-up services</li>
+          <li>Food service area sanitization</li><li>Pressure washing</li>
+          <li>Document disposal</li><li>Restroom cleaning</li>
+          <li>Industrial cleaning</li><li>Event services</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSTRUCTION -->
+<section class="constr">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Construction cleaning</span>
+      <h2>The construction cleaning specialists.</h2>
+      <p>Expert construction clean-up services at any stage of the building process, for residential renovation clean-up operations and post-construction maintenance for contractors.</p>
+      <p>Our post-construction cleaning is not about ordinary dusting and mopping. Our team routinely handles large loads of debris, the removal of adhesives, ecologically responsible trash disposal, and heavy dust on every surface, corner and crevice.</p>
+      <div class="ph"><img src="images/construction.jpg" alt="Post-construction cleaning in progress" onerror="this.remove()"></div>
+    </div>
+    <div class="clip rv">
+      <h3>Construction cleaning checklist</h3>
+      <ul>
+        <li>Vacuuming</li><li>Dust ceilings</li>
+        <li>Clean walls (dust, smudges, scuffmarks, dirt)</li><li>Dust handrails, mantels, and all woodwork and cabinetry</li>
+        <li>Clean trim, baseboards, window frames, and doors and frames</li><li>Cabinets, closets, drawers and shelves, inside and out cleaning</li>
+        <li>Remove paint, mud, and debris from all surfaces</li><li>Clean exterior and interior brick and stone masonry</li>
+        <li>Exterior cleaning / Landscaping / Concrete</li><li>Floor cleaning, waxing, buffing, sealing</li>
+        <li>Windows: sticker removal, track and frame cleaning</li><li>Light fixtures / electrical switches / outlets</li>
+        <li>Ventilation systems cleaning / Heating and cooling / Fans</li><li>Construction site cleaning according to requirements</li>
+        <li>Pressure washing</li><li>Trash disposal</li>
+      </ul>
+      <p class="foot">Free estimates and reasonable rates. Call (780) 995-9780 to find out more.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULED + GREEN -->
+<section class="sg">
+  <div class="wrap">
+    <div class="sched rv">
+      <span class="eyebrow">Scheduled cleaning</span>
+      <h2>Cleaning schedules that suit the pace of your lifestyle.</h2>
+      <p class="sub">Customized on a weekly, bi-weekly, monthly or seasonal basis.</p>
+      <div class="tabs" role="tablist">
+        <button class="on" role="tab" data-t="0">Weekly</button>
+        <button role="tab" data-t="1">Bi-Weekly</button>
+        <button role="tab" data-t="2">Monthly</button>
+      </div>
+      <div class="tabpane on" data-p="0"><h3>Weekly Cleaning Services</h3><p>For those who require a high standard of cleanliness, weekly cleaning packages keep your home or office consistently fresh and immaculate. Ideal for homes or offices with family members or employees who suffer from allergies or other sensitive conditions, and for homes with pets or hectic schedules that require frequent travel.</p></div>
+      <div class="tabpane" data-p="1"><h3>Bi-Weekly Cleaning</h3><p>Bi-weekly services are an ideal cleaning option for singles, the elderly or those with no children or pets. We provide a deeper cleaning regimen for clients in the Edmonton area who opt to clean twice a month.</p></div>
+      <div class="tabpane" data-p="2"><h3>Monthly Clean-Ups</h3><p>Our monthly cleaning option provides thorough and deep cleaning at an economical rate. For those who maintain their own regular cleaning routine but need some extra assistance with heavier household cleaning tasks.</p></div>
+      <ul class="adv">
+        <li>Friendly and efficient staff</li><li>Advanced cleaning equipment</li><li>Flexible schedules</li><li>Free in-home estimates</li>
+      </ul>
+    </div>
+    <div class="green rv">
+      <span class="eyebrow">Green cleaning</span>
+      <h2>How to "Clean Green" in St. Albert.</h2>
+      <p>Green cleaning products and techniques avoid or entirely eliminate the use of chemically toxic products that can harm people, pets and the surroundings. Our Green Cleaning commitment provides:</p>
+      <ul>
+        <li>Certified non-toxic cleaning products</li>
+        <li>HEPA Vacuums</li>
+        <li>EPA recognized disinfectant</li>
+        <li>Non-ammonia glass and multi-purpose cleaners</li>
+        <li>Non-alkaline detergents</li>
+        <li>Advanced energy saving cleaning equipment</li>
+        <li>Environmentally conscious and knowledgeable staff</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Committed to clients</span>
+      <h2>A clean space is a healthy space.</h2>
+      <p class="lede">Having a clean environment to live and work in is no small matter. Cleanliness keeps everyone in the area healthy and breathing easy, and it matters for mental health too. Unkempt spaces are oppressive to the mind and undercut concentration and productivity.</p>
+      <ul class="chips">
+        <li>Customer Satisfaction Follow-ups</li><li>24/7 availability</li><li>Licensed</li><li>Insured</li><li>Courteous</li><li>Bonded</li>
+      </ul>
+    </div>
+    <div class="acc rv" id="acc">
+      <div class="acc-i open">
+        <button class="acc-q" aria-expanded="true">Licensed <i></i></button>
+        <div class="acc-a"><p>In order for any company to work in our industry they must be licensed. This allows us to work under protection of the law.</p></div>
+      </div>
+      <div class="acc-i">
+        <button class="acc-q" aria-expanded="false">Bonded <i></i></button>
+        <div class="acc-a"><p>For consumers to be protected many industries demand that companies or individuals be bonded. In the event of poor workmanship the client is able to recover what was lost from the bonding company.</p></div>
+      </div>
+      <div class="acc-i">
+        <button class="acc-q" aria-expanded="false">Insured <i></i></button>
+        <div class="acc-a"><p>To protect employees and clients our company is insured to cover workplace accidents as well as property and liability insurance.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Free quote</span>
+      <h2>Contact R B Maintenance &amp; Cleaning Inc</h2>
+      <p class="s">Call (780) 995-9780 or send us a message for a free consultation and estimate.</p>
+      <form action="#" method="post" onsubmit="return false">
+        <div><label for="fn">First Name*</label><input id="fn" name="first_name" required></div>
+        <div><label for="ln">Last Name*</label><input id="ln" name="last_name" required></div>
+        <div><label for="ph">Phone Number*</label><input id="ph" name="phone" type="tel" required></div>
+        <div><label for="em">Email Address*</label><input id="em" name="email" type="email" required></div>
+        <div class="full"><label for="ms">Your Message*</label><textarea id="ms" name="message" required></textarea></div>
+        <button class="btn btn-dark" type="submit">Submit Form &rarr;</button>
+      </form>
+    </div>
+    <aside class="info rv">
+      <h3>Contact Information</h3>
+      <div class="it"><span>Address</span><b>Sherwood Park, AB T8A 4N4</b></div>
+      <div class="it"><span>Tel</span><b><a href="tel:+17809959780">(780) 995-9780</a></b></div>
+      <div class="it"><span>Email</span><b><a href="mailto:rbmaintenance@shaw.ca">rbmaintenance@shaw.ca</a></b></div>
+      <div class="it"><span>Hours of Service</span><b>Monday to Friday: 8:00AM - 5:00PM<br>Saturday: Closed<br>Sunday: Closed<br>24/7 emergency services available</b></div>
+      <div class="it" style="border:0"><span>Methods of Payment</span>
+        <ul class="pay"><li>Cash</li><li>Check</li><li>Debit Card</li><li>Visa</li><li>Mastercard</li></ul>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="#top">
+          <img class="brand-img" src="images/logo-white.png" alt="R B Maintenance &amp; Cleaning Inc" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="brand-fallback"><span class="mono">RB</span><span class="brand-name">R B Maintenance &amp; Cleaning Inc<small>Janitorial Service</small></span></span>
+        </a>
+        <p class="t">St. Albert Janitorial Service, Office Cleaning and Commercial Cleaning.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="https://rbmaintenance.ca/about-us/">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://rbmaintenance.ca/commercial/">Commercial</a></li>
+          <li><a href="https://rbmaintenance.ca/construction-cleaning/">Construction Cleaning</a></li>
+          <li><a href="https://rbmaintenance.ca/scheduled-cleaning-service/">Scheduled Cleaning Service</a></li>
+          <li><a href="https://rbmaintenance.ca/green-cleaning/">Green Cleaning</a></li>
+          <li><a href="https://rbmaintenance.ca/maid-services/">Maid Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+17809959780">(780) 995-9780</a></li>
+          <li><a href="mailto:rbmaintenance@shaw.ca">rbmaintenance@shaw.ca</a></li>
+          <li>Sherwood Park, AB T8A 4N4</li>
+          <li><a href="https://www.google.com/maps/place/R+B+Maintenance+%26+Cleaning+Inc/@53.5171128,-113.8893521,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x23ed43a22f3cd47e!8m2!3d53.5184229!4d-113.328953?hl=en" target="_blank" rel="noopener">Find us on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbar">
+      <span>&copy; 2026 R B Maintenance &amp; Cleaning Inc. All rights reserved.</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+// mobile nav
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+nav.querySelectorAll('button.nl').forEach(function(b){b.addEventListener('click',function(){b.parentElement.classList.toggle('sub-open')})});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
+// tabs
+var tb=document.querySelectorAll('.tabs button'),tp=document.querySelectorAll('.tabpane');
+tb.forEach(function(b){b.addEventListener('click',function(){tb.forEach(function(x){x.classList.toggle('on',x===b)});tp.forEach(function(p){p.classList.toggle('on',p.dataset.p===b.dataset.t)})})});
+// accordion
+var items=[].slice.call(document.querySelectorAll('.acc-i'));
+function setH(i){var a=i.querySelector('.acc-a');a.style.maxHeight=i.classList.contains('open')?a.scrollHeight+'px':'0'}
+items.forEach(function(i){setH(i);i.querySelector('.acc-q').addEventListener('click',function(){var was=i.classList.contains('open');items.forEach(function(x){x.classList.remove('open');x.querySelector('.acc-q').setAttribute('aria-expanded','false');setH(x)});if(!was){i.classList.add('open');i.querySelector('.acc-q').setAttribute('aria-expanded','true');setH(i)}})});
+window.addEventListener('resize',function(){items.forEach(setH)});
+// reveal
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
